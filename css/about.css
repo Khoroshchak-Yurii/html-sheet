@@ -13,29 +13,6 @@ nav {
     width: 400px
 }
 
-#into-slider-quote{
-    text-align: center;
-}
-
-.intro-slider { 
- display: inline-block; 
- padding-left: 40px;
- padding-right: 40px   
-
-}
-
-h2{
-    text-align: center;
-}
-
-.poster-item {
-  display: inline-block;
-  width: 200px;
-  height: 100px;
-  margin: 18px;
-  padding-left: 40px;
-  padding-right: 40px
-}
 
 footer {
     display: flex;
@@ -44,4 +21,15 @@ footer {
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px
+}
+
+main {
+  width: 1200px;
+  height: 400px;
+  background-image: url("/img/oldlady-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-left: 60px
+  
 }
