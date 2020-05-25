@@ -1,4 +1,39 @@
-header {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+#logo {
+    width: 200px;
+    margin: 0;
+}
+
+.top-menu{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    --main-color: black;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.top-menu a {
+
+}
+
+
+#basket-logo {
+    width: 40px;
+    margin: 0;
+}
+
+/*
+.header-navigation {
     display: flex;
     height: 100px;
     align-items: center;
@@ -7,7 +42,20 @@ header {
     padding-right: 40px
 }
 
-nav {
+header {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 17px;
+}
+
+#basket-logo {
+    width: 40px;
+    fill: red;
+}
+
+.top-menu {
     display: flex;
     justify-content: space-between;
     width: 400px
@@ -17,7 +65,7 @@ nav {
     text-align: left;
 }
 
-.intro-slider {
+.banner {
   width: 1200px;
   height: 400px;
   background-image: url("/img/intro-slider-background.jpg");
@@ -59,3 +107,4 @@ footer {
     padding-left: 40px;
     padding-right: 40px
 }
+*/
