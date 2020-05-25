@@ -1,0 +1,14 @@
+
+.poster-item {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 2em;
+}
+
+.review-item {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 1em;  
+}
