@@ -1,36 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 
-#logo {
-    width: 200px;
-    margin: 0;
-}
-
-.top-menu{
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 :root {
     font-family: 'Montserrat', sans-serif;
     --main-color: black;
-}
-
-h1 {
-    font-size: 18px;
-    text-align: center;
-}
-
-.top-menu a {
-
+    font-weight: 100
 }
 
 
-#basket-logo {
-    width: 40px;
-    margin: 0;
+
+
+header #logo-container{
+    display: flex;
+    justify-content: center;
+
 }
+
+header #logo {
+    width: 12rem;
+}
+
+header .top-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .top-menu a {
+    font-size: 1rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .top-menu a:hover {
+    border: 1px solid crimson;
+
+}
+
+header #basket-logo {
+    width: 30px;
+    }
 
 /*
 .header-navigation {
