@@ -58,13 +58,16 @@ header .top-menu a {
 
 header .top-menu a:hover {
     border: 1px solid crimson;
+    height: 18px;
     
 }
 
-
+/* PROBLEM */
 header #basket-logo {
     width: 30px;
+    height: 20px;
     padding-bottom: 0;
+
     }
 
 hr {
@@ -118,6 +121,18 @@ header #into-slider-quote {
      margin-left: 20px;
 }
 
+@media (max-width: 500px){
+    header .banner h1 {
+    margin-left: 20px;
+}
+
+header #into-slider-quote {
+     margin-top: -5px;
+     margin-left: 20px;
+     width: 120px
+}
+}
+
 #posters .poster-item img{
     display: block;
     width: 100%;
@@ -146,7 +161,6 @@ main #posters h3{
 
 }
 
-
 @media (min-width: 500px) {
     main #posters {
         display: grid;
@@ -167,79 +181,119 @@ main #posters h3{
 }
 }
 
-/*
-.header-navigation {
+
+.reviews h2{
+    font-size: 20px;
     display: flex;
-    height: 100px;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-weight: 400;
 }
 
-header {
-    font-family: 'Montserrat', sans-serif;
+.review-item img{
+    display: block;
+    width: 100%;
 }
 
-h1 {
-    font-size: 17px;
+.reviewer-name{
+    font-size: 12px;
+    font-weight: 400;
 }
 
-#basket-logo {
-    width: 40px;
-    fill: red;
+.reviewer-quote{
+    font-size: 12px;
 }
 
-.top-menu {
+.review-item p{
     display: flex;
-    justify-content: space-between;
-    width: 400px
-}
-
-#into-slider-quote{
-    text-align: left;
-}
-
-.banner {
-  width: 1200px;
-  height: 400px;
-  background-image: url("/img/intro-slider-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  margin-left: 60px
-  
-
-}
-
-h2{
+    justify-content: center;
     text-align: center;
 }
 
-.poster-item {
-  display: inline-block;
-  width: 200px;
-  height: 100px;
-  margin: 18px;
-  padding-left: 40px;
-  padding-right: 40px
+@media (min-width: 500px) {
+    main #reviews-back {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 50px;
 }
-
-.review-item {
-  display: inline-block;
-  width: 200px;
-  height: 100px;
-  margin: 20px;
-  padding-left: 40px;
-  padding-right: 40px
 }
 
 footer {
     display: flex;
-    height: 100px;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    background-position: cover;
+    
 }
-*/
+
+footer nav a{
+    padding: 5px
+}
+
+footer nav a:hover {
+    border: 1px solid crimson;
+    height: 18px;
+    
+}
+
+footer #logo-and-quote img {
+    width: 120px;
+ 
+}
+
+footer #logo-and-quote {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px
+
+}
+
+footer #social-media-links img{
+    padding-top: 5px; 
+    width: 2rem;
+}
+
+footer nav a {
+    font-size: 1rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid transparent;
+
+}
+
+#credentials {
+    font-size: 12px
+}
+
+@media (min-width: 750px) {
+    footer {
+        display: grid;
+        grid-template-columns:1fr 2fr 1fr 1fr;
+        grid-gap: 1px;
+}
+    #logo-and-quote img{
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+
+    footer nav{
+        grid-column: 2/4;
+        grid-row: 1;
+    }
+
+    #social-media-links{
+        grid-column: 3/4;
+        grid-row: 1; 
+    }
+
+    footer #credentials{
+        grid-column: 4/4;
+        grid-row: 1;
+
+}
