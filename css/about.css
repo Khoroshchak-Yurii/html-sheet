@@ -1,35 +1,93 @@
-header {
-    display: flex;
-    height: 100px;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+html, a, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 400px
+body {
+    max-width: 980px;
+    margin: auto;
 }
 
-
-footer {
-    display: flex;
-    height: 100px;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px
+:root {
+    font-family: 'Montserrat', sans-serif;
+    --main-color:black;
+    --accent-color:#ED4339;
+    font-weight: 100
 }
 
-main {
-  width: 1200px;
-  height: 400px;
-  background-image: url("/img/oldlady-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  margin-left: 60px
-  
+header #logo-container{
+    display: flex;
+    justify-content: center;
+}
+
+header #logo {
+    width: 10rem;
+}
+
+header .top-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .top-menu a {
+    font-size: 1rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid transparent;
+
+}
+
+header .top-menu a:hover {
+    border: 1px solid crimson;
+    
+}
+
+/* PROBLEM */
+header #basket-logo {
+    width: 30px;
+    height: 20px;
+    padding-bottom: 0;
+
+    }
+
+hr {
+    height: 0.1px;
+    background-color: var(--accent-color);
+    border: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+ @media (min-width: 500px) {
+     #top-menu-and-logo {
+        display:flex;
+        align-items: center;
+    }
+    
+    header .top-menu{
+        margin-top: 15px;
+    }
+
+    header nav{
+        flex: 1;
+    }
 }
