@@ -156,40 +156,64 @@ hr {
     flex: 1;
   }
 }
+
+@media (max-width: 500px) {
+  header .banner h1 {
+    margin-left: 20px;
+  }
+
+  header #into-slider-quote {
+    margin-top: -5px;
+    margin-left: 20px;
+    width: 120px;
+  }
+}
+
 /* MAIN */
-
-.background-about {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  background-image: url(../img/oldlady-background-about.jpg);
-  min-height: 750px;
-  background-position: center;
-  background-size: cover;
+#poster-carousel {
+  width: 600px;
 }
 
-.about-info {
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-bottom: 100px;
-  background-color: rgba(237, 67, 57, 0.6);
-}
-
-main h1 {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: 2rem;
+.product h1 {
+  font-size: 25px;
   font-weight: 400;
+  text-align: center;
+}
+.product p {
+  font-size: 15px;
+  text-align: center;
 }
 
-main p {
+section label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#delivery-note {
+  font-size: 10px;
+}
+.original-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.original-video p {
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
-  font-size: 20px;
-  color: rgb(255, 255, 255);
 }
 
 /* FOOTER */
-
 footer #logo-and-quote img {
   display: block;
   margin-left: auto;
