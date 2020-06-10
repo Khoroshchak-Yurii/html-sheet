@@ -90,6 +90,13 @@ video {
   vertical-align: baseline;
 }
 
+#top-menu-and-logo {
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
 body {
   max-width: 980px;
   margin: auto;

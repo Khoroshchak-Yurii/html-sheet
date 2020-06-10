@@ -95,6 +95,13 @@ body {
   margin: auto;
 }
 
+header {
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
 :root {
   font-family: "Montserrat", sans-serif;
   --main-color: black;
@@ -128,9 +135,10 @@ header .top-menu a:hover {
   border: 1px solid crimson;
 }
 
-header #basket-logo {
-  width: 30px;
+header nav a #basket-logo {
+  width: 40px;
   height: 20px;
+  margin: 0;
   padding-bottom: 0;
 }
 
@@ -185,12 +193,6 @@ section label {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#cart-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 form {

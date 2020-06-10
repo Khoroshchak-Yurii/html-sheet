@@ -45,15 +45,15 @@
                             alt="poster with kid who speaks english">
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#poster-carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#poster-carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
+            <a class="carousel-control-prev" href="#poster-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#poster-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
             <section class="product">
                 <h1>"Сокіабле"</h1>
                 <p class="poster-description">Чудовий подарунок для людини, яка щойно закінчила курси
@@ -64,8 +64,8 @@
                     <label for="poster-size">
                         Розмір:&nbsp;
                         <select name="poser-size" id="poster-size">
-                            <option value="A2">A2 (100‎₴)</option>
-                            <option value="A3">A3 (50‎₴)</option>
+                            <option value="A2">A2(100‎₴)</option>
+                            <option value="A3">A3(50‎₴)</option>
                         </select>
                     </label>
                 </section>
@@ -73,21 +73,28 @@
                     <label for="poster-frame">
                         Рамка:&nbsp;
                         <select name="poster-frame" id="poster-frame">
-                            <option value="пластикові кріплення">Пластикові кріплення (+50‎₴)</option>
-                            <option value="деревяна рамка">Дерев'яна рамка (+300‎₴)</option>
+                            <option value="пластикові кріплення">Пластикові кріплення(+50‎₴)</option>
+                            <option value="деревяна рамка">Дерев'яна рамка(+300‎₴)</option>
                             <option value="без рамки">Без рамки</option>
                         </select>
                     </label>
+                    <label for="poster-price">
+                        Ціна:&nbsp;
+                        <input type="text" class="display" name="poster-price" readonly>
+                    </label>
                 </section>
             </form>
-            <div id="cart-button">
+            <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModal">
+                В кошик!
+            </button>
+            <!-- <div id="cart-button">
                 <button type="button" class="btn btn-outline-danger">В кошик!</button>
-            </div>
+            </div> -->
             <p id="delivery-note">*Безкоштовна доставка при замовленні від 600₴</p>
         </article>
         <div class="original-video">
             <p>Оригінал переглядаємо тут!</p>
-            <iframe src="https://www.youtube.com/embed/9yBxB_x7O64" frameborder="0"
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/9yBxB_x7O64" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
@@ -109,6 +116,27 @@
         <p id="credentials">&copy;Created by <a href="https://www.instagram.com/khoroshchak_photography/?hl=uk"
                 target="_blank">&nbsp;Y.Khoroshchak</a> </p>
     </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
