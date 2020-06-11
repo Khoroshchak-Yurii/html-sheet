@@ -95,13 +95,6 @@ body {
   margin: auto;
 }
 
-header {
-  background-color: white;
-  position: sticky;
-  top: 0px;
-  z-index: 1;
-}
-
 :root {
   font-family: "Montserrat", sans-serif;
   --main-color: black;
@@ -135,10 +128,10 @@ header .top-menu a:hover {
   border: 1px solid crimson;
 }
 
-header a #basket-logo {
-  width: 40px;
+/* PROBLEM */
+header #basket-logo {
+  width: 30px;
   height: 20px;
-  margin: 0;
   padding-bottom: 0;
 }
 
@@ -164,71 +157,10 @@ hr {
     flex: 1;
   }
 }
-
-@media (max-width: 500px) {
-  header .banner h1 {
-    margin-left: 20px;
-  }
-
-  header #into-slider-quote {
-    margin-top: -5px;
-    margin-left: 20px;
-    width: 120px;
-  }
-}
-
 /* MAIN */
 
-.carousel {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.product h1 {
-  font-size: 25px;
-  font-weight: 400;
-  text-align: center;
-}
-.product p {
-  font-size: 15px;
-  text-align: center;
-}
-
-section label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-form {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#delivery-note {
-  font-size: 10px;
-}
-.original-video {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.original-video p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-#into-cart-btn {
-  display: flex;
-  justify-content: center;
-}
 /* FOOTER */
+
 footer #logo-and-quote img {
   display: block;
   margin-left: auto;
@@ -241,7 +173,6 @@ footer nav {
 }
 
 footer nav a {
-  padding-bottom: 10px;
   margin-left: 10px;
 }
 
@@ -268,9 +199,7 @@ footer nav a {
 
 footer nav a:hover {
   border: 1px solid crimson;
-  height: 20px;
-  text-decoration: none;
-  color: var(--main-color);
+  height: 18px;
 }
 
 footer #social-media-links {
@@ -339,15 +268,4 @@ footer #credentials {
     grid-column: 2/3;
     grid-row: 2/2;
   }
-}
-
-.form-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-table .table-head {
-  display: flex;
-  justify-content: center;
 }

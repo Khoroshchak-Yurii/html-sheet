@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>"Контакти"</title>
+    <meta name="author" content="Yurii Khoroshchak">
+    <link rel="icon" href="img/sheet-fav.svg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <header>
+        <div id="top-menu-and-logo">
+            <div id="logo-container">
+                <a href="index.html"><img src="img/sheet-logo.png" alt="logo of the company 'Sheet'" id="logo"></a>
+            </div>
+            <nav class="top-menu">
+                <a href="index.html">Постери</a>
+                <a href="about.html">Про нас</a>
+                <a href="contacts.html">Контакти</a>
+                <a href="#"><img src="img/shop-basket.svg" alt="shopping basket image" id="basket-logo"></a>
+            </nav>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <h1>Ваше замовлення:</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-5"><strong>Постер</strong></div>
+                <div class="col-3"><strong>Ціна</strong></div>
+            </div>
+            <div class="row" data-id="1">
+                <div class="col-5">Сокіабле</div>
+                <div class="col-3">400</div>
+                <div class="col-1"><button data-id="1" class="btn btn-sm plus">x</button></div>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="name">Ім'я:</label>
+                    <input type="name" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Номер телефону:</label>
+                    <input type="phone" class="form-control" id="phone">
+                </div>
+                <button type="submit" class="btn btn-primary">Замовити</button>
+                <button type="submit" class="btn btn-primary">Вийти</button>
+            </form>
+
+
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Кошик</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="selected-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-5"><strong>Постер</strong></div>
+                                    <div class="col-3"><strong>Ціна</strong></div>
+                                </div>
+                                <div class="row" data-id="1">
+                                    <div class="col-5">Сокіабле</div>
+                                    <div class="col-3">400</div>
+                                    <div class="col-1"><button data-id="1" class="btn btn-sm plus">x</button></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5"><strong>Загалом</strong></div>
+                                    <div class="col-3"><strong>400</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="contacts">
+                            <div class="form-group row">
+                                <label for="client-name" class="col-form-label">Ім'я:</label>
+                                <input class="form-control" type="text" id="client-name" required>
+                            </div>
+                            <div class="form-group row">
+                                <label for="client-email" class="col-form-label"></label>Email:</label>
+                                <input class="form-control " type="email" id="client-email" required>
+                            </div>
+                            <div class="form-group row">
+                                <label for="client-email" class="col-form-label">Номер телефону:</label>
+                                <input class="form-control " type="email" id="client-email" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+                        <button type="button" class="btn btn-primary">Замовити</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="logo-and-quote">
+            <a href="index.html"><img src="img/sheet-logo.png" alt="logo of the company 'Sheet'"></a>
+        </div>
+        <nav>
+            <a href="index.html">Постери</a>
+            <a href="about.html">Про нас</a>
+            <a href="contacts.html">Контакти</a>
+        </nav>
+        <div id="social-media-links">
+            <a href="https://www.facebook.com/Sheet21-115431013224471"><img src="img/facebook.svg"
+                    alt="facebook logo"></a>
+            <a href="https://www.instagram.com/sheet.21/?hl=uk"><img src="img/instagram.svg" alt="instagram logo"></a>
+        </div>
+        <p id="credentials">&copy;Created by <a href="https://www.instagram.com/khoroshchak_photography/?hl=uk"
+                target="_blank">&nbsp;Y.Khoroshchak</a> </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="card.js"></script>
+</body>
+
+</html>
