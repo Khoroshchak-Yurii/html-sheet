@@ -95,12 +95,12 @@ body {
   margin: auto;
 }
 
-header {
+/* header {
   background-color: white;
   position: sticky;
   top: 0px;
   z-index: 1;
-}
+} */
 
 :root {
   font-family: "Montserrat", sans-serif;
@@ -341,13 +341,37 @@ footer #credentials {
   }
 }
 
-.form-group {
+/* modal */
+.hidden {
+  display: none;
+}
+
+.prod-head {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.price-head {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.formheader {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
-table .table-head {
+.formdata {
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+#order-modal {
+  font-size: 20px;
+}
+
+#order-btn {
   display: flex;
   justify-content: center;
 }

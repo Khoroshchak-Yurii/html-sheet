@@ -22,6 +22,7 @@ document
   .querySelector("#poster-frame")
   .addEventListener("change", CalcFramePrice);
 function CalcFramePrice() {
+  let priceForModal = "";
   let framePrice = display.value;
   if (posterFrame.value === "plastic") {
     framePrice = 50;
@@ -34,3 +35,23 @@ function CalcFramePrice() {
   }
   display.value = sizePrice + framePrice + "₴";
 }
+const formProdName = document.querySelector("#form-poster-name");
+const formProdPrice = document.querySelector("#form-poster-price");
+let prodName = document.querySelector(".prod-name");
+let prodPrice = document.querySelector(".prod-price");
+const pageProdName = document.querySelector(".product h1");
+const pageProdNameText = pageProdName.innerText;
+document
+  .querySelector(".prod-info-transfer")
+  .addEventListener("click", transferInfo);
+
+function transferInfo() {
+  let pageProdPrice = display.value;
+  prodName.innerHTML = pageProdNameText;
+  // prodPrice.innerHTML = priceForModal;
+  prodPrice.innerHTML = pageProdPrice;
+  formProdName.value = pageProdNameText;
+  formProdPrice.value = pageProdPrice;
+}
+
+// transferInfoPrice;

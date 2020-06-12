@@ -23,9 +23,9 @@
                 <a href="index.html">Постери</a>
                 <a href="about.html">Про нас</a>
                 <a href="contacts.html">Контакти</a>
-                <a href="cart.html"><img src="img/shop-basket.svg" alt="shopping basket image" id="basket-logo"></a>
+                <!-- <a href="cart.html"><img src="img/shop-basket.svg" alt="shopping basket image" id="basket-logo"></a> -->
             </nav>
-            <p id="cart-index"></p>
+            <!-- <p id="cart-index"></p> -->
         </div>
         <hr>
     </header>
@@ -89,15 +89,20 @@
                 </label>
             </section>
         </form>
-        <div id="into-cart-btn">
+        <div id="order-btn">
+            <button type="button" class="btn btn-outline-danger prod-info-transfer" data-toggle="modal"
+                data-target="#OrderModal">
+                Замовити!
+            </button>
+        </div>
+        <!-- <div id="into-cart-btn">
             <button type="button" data-id="1" class="btn btn-outline-danger">
                 В кошик!
             </button>
-        </div>
+        </div> -->
         <!-- <div id="cart-button">
                 <button type="button" class="btn btn-outline-danger">В кошик!</button>
             </div> -->
-        <p id="delivery-note">*Безкоштовна доставка при замовленні від 600₴</p>
         </article>
         <div class="original-video">
             <p>Оригінал переглядаємо тут!</p>
@@ -123,6 +128,62 @@
         <p id="credentials">&copy;Created by <a href="https://www.instagram.com/khoroshchak_photography/?hl=uk"
                 target="_blank">&nbsp;Y.Khoroshchak</a> </p>
     </footer>
+    <!-- modal -->
+    <div class="modal fade" id="OrderModal" tabindex="-1" role="dialog" aria-labelledby="order-modal"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="order-modal">Ваше замовлення:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row formheader">
+                            <div class="col-5 prod-head"><strong>Постер</strong></div>
+                            <div class="col-3 price-head"><strong>Ціна</strong></div>
+                        </div>
+                        <div class="row formdata" data-id="1">
+                            <div class="col-5 prod-name"></div>
+                            <div class="col-3 prod-price"></div>
+                        </div>
+                        <form action="https://formspree.io/xnqgjwva" method="POST">
+                            <div class="form-group">
+                                <label for="name">Ім'я:</label>
+                                <input type="name" class="form-control" id="name" name="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Номер телефону:</label>
+                                <input type="phone" class="form-control" id="phone" name="phone" required>
+                            </div>
+                            <!-- demo form -->
+                            <div class="form-group hidden">
+                                <label for="formposterprice">Постер:</label>
+                                <input type="name" class="form-control" id="form-poster-price" name="formposterprice"
+                                    required readonly>
+                            </div>
+                            <div class="form-group hidden">
+                                <label for="formpostername">Ціна:</label>
+                                <input type="name" class="form-control" id="form-poster-name" name="formpostername"
+                                    required readonly>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Вийти</button>
+                                <button type="submit" class="btn btn-outline-danger">Оформити</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
