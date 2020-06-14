@@ -73,15 +73,13 @@ footer,
 header,
 hgroup,
 menu,
-nav,
 output,
 ruby,
 section,
 summary,
 time,
 mark,
-audio,
-video {
+audio {
   margin: 0;
   padding: 0;
   border: 0;
@@ -129,6 +127,7 @@ header .top-menu a {
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid transparent;
+  padding: 3px;
 }
 
 header .top-menu a:hover {
@@ -179,12 +178,6 @@ hr {
 
 /* MAIN */
 
-.carousel {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .product h1 {
   font-size: 25px;
   font-weight: 400;
@@ -212,6 +205,7 @@ form {
 #delivery-note {
   font-size: 10px;
 }
+
 .original-video {
   display: flex;
   flex-direction: column;
@@ -224,8 +218,41 @@ form {
   text-align: center;
 }
 
+@media (min-width: 400px) {
+  .original-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .original-video p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .height-control {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media (min-width: 980px) {
+  .height-control {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+}
+
 #into-cart-btn {
   display: flex;
+  justify-content: center;
+}
+
+.size-frame {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 /* FOOTER */
@@ -241,7 +268,6 @@ footer nav {
 }
 
 footer nav a {
-  padding-bottom: 10px;
   margin-left: 10px;
 }
 
@@ -263,14 +289,13 @@ footer nav a {
   color: var(--main-color);
   text-transform: uppercase;
   text-decoration: none;
+  text-decoration-style: none;
+  text-decoration-color: none;
   border: 1px solid transparent;
 }
 
-footer nav a:hover {
-  border: 1px solid crimson;
-  height: 20px;
-  text-decoration: none;
-  color: var(--main-color);
+footer nav a {
+  height: 25px;
 }
 
 footer #social-media-links {
@@ -280,7 +305,7 @@ footer #social-media-links {
 
 footer #social-media-links a {
   margin-right: 2px;
-  margin-top: 5px;
+  margin-top: px;
   margin-bottom: 5px;
 }
 
@@ -309,6 +334,7 @@ footer #credentials {
     margin-top: 40px;
     justify-content: space-around;
     border: 1px solid transparent;
+    padding: 3px;
   }
 
   footer nav a:hover {
@@ -340,7 +366,6 @@ footer #credentials {
     grid-row: 2/2;
   }
 }
-
 /* modal */
 .hidden {
   display: none;

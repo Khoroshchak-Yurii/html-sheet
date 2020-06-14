@@ -122,6 +122,7 @@ header .top-menu a {
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid transparent;
+  padding: 3px;
 }
 
 header .top-menu a:hover {
@@ -267,9 +268,8 @@ footer nav a {
   border: 1px solid transparent;
 }
 
-footer nav a:hover {
-  border: 1px solid crimson;
-  height: 18px;
+footer nav a {
+  height: 20px;
 }
 
 footer #social-media-links {
@@ -308,6 +308,7 @@ footer #credentials {
     margin-top: 40px;
     justify-content: space-around;
     border: 1px solid transparent;
+    padding: 3px;
   }
 
   footer nav a:hover {
